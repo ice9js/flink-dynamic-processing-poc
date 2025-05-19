@@ -19,6 +19,8 @@ Checkpoints ensure fault tolerance, at the cost of some events potentially being
 
 ## Testing instructions
 
+_A word of cation: current implementation doesn't include any error handling so dispatching a badly formatted message can result in crashing Flink's jobmanager._
+
 ### Set up
 
 1. Run `./bin/build.sh` to build the job `*.jar` archive. Requires maven to be installed.
